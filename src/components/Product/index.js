@@ -3,27 +3,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClipboard, faTag } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-const Product = () => {
+const Product = ({ product }) => {
+  const { id, name, price, images } = product;
   return (
-    <Link to="/product">
+    <Link to={`/product/${id}`}>
       <div className="product-card other-cards">
         <div className="product-card-image">
-          <img
-            src={
-              "https://res.cloudinary.com/dodfpnbik/image/upload/v1572441788/4_w3o5fj.jpg"
-            }
-            className="img-card"
-            alt="product"
-          />
+          <img src={images[0]} className="img-card" alt="product" />
         </div>
         <div className="product-card-details">
           <div>
             <FontAwesomeIcon icon={faClipboard} size="1x" color="#163172" />
-            <span className="prod-card-text">Product Name</span>
+            <span className="prod-card-text">{name}</span>
           </div>
           <div>
             <FontAwesomeIcon icon={faTag} size="1x" color="#163172" />
-            <span className="prod-card-text">Price</span>
+            <span className="prod-card-text">{price.toLocaleString()} RWF</span>
           </div>
         </div>
       </div>

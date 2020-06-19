@@ -918,16 +918,23 @@ a {
   width: 85%;
   align-items: center;
 }
-.remove-spec{
+.remove-spec {
   cursor: pointer;
 }
 
-.img-area{
+.img-area {
   width: 80%;
   margin-bottom: 20px;
 }
 
-.img-label{
+.img-label {
   text-align: left;
   margin-bottom: 5px;
+}
+
+.loading-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
