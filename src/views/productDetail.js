@@ -3,11 +3,9 @@ import Slider from "../components/Slider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClipboard } from "@fortawesome/free-solid-svg-icons";
 import { connect } from "react-redux";
-import Skeleton from "../components/Skeleton";
 import ReactLoading from "react-loading";
 
 const ProductDetail = ({ product }) => {
-  console.log("=======>product", product);
 
   if (!product) {
     return (

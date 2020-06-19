@@ -7,6 +7,11 @@ export default function products(state = {}, action) {
         ...state,
         ...action.products,
       };
+    case ADD_PRODUCT:
+      return {
+        ...state,
+        [action.product.id]: action.product,
+      };
     default:
       return state;
   }

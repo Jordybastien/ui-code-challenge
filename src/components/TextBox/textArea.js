@@ -5,7 +5,10 @@ const TextArea = ({
   label,
   placeholder,
   type,
-  //   meta: { touched, error, warning },
+  onChange,
+  name,
+  value,
+  error,
 }) => (
   <div className="txtBox-container tx-area">
     <div className="txtbox-name">
@@ -18,13 +21,14 @@ const TextArea = ({
       type={type}
       className="txt-area"
       rows="5"
+      onChange={onChange}
+      name={name}
+      value={value}
     />
 
-    {/* <div>
-      {touched &&
-        ((error && <span className="font-italic text-danger">{error}</span>) ||
-          (warning && <span>{warning}</span>))}
-    </div> */}
+    <div className="error-container">
+      {error && <span className="font-italic text-danger">{error}</span>}
+    </div>
   </div>
 );
 

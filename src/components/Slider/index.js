@@ -14,6 +14,7 @@ const Slider = ({ images }) => {
       setCurrent(current - 1);
     }
   };
+  
   return (
     <div className="slider-container">
       <div className="slider-thumbnails">

@@ -4,7 +4,10 @@ const TextBox = ({
   input,
   label,
   placeholder,
-  //   meta: { touched, error, warning },
+  onChange,
+  name,
+  value,
+  error,
 }) => (
   <div className="txtBox-container">
     <div className="txtbox-name">
@@ -16,12 +19,13 @@ const TextBox = ({
       placeholder={placeholder}
       type="text"
       className="txtbox"
+      onChange={onChange}
+      name={name}
+      value={value}
     />
-    {/* <div>
-      {touched &&
-        ((error && <span className='font-italic text-danger'>{error}</span>) ||
-          (warning && <span>{warning}</span>))}
-    </div> */}
+    <div className='error-container'>
+      {error && <span className="font-italic text-danger">{error}</span>}
+    </div>
   </div>
 );
 
