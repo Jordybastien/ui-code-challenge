@@ -822,3 +822,112 @@ a {
   margin-left: 5px;
   height: 100%;
 }
+
+/* 8. Add Product form */
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 50%;
+  background-color: var(--fourth-color);
+  border-radius: 20px;
+  padding: 20px 10px 20px 10px;
+  box-shadow: 0 7px 12px 0 rgba(62, 57, 107, 0.13);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-title {
+  font-size: 1.5em;
+}
+
+.txtBox-container {
+  height: 52px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.text-danger {
+  font-style: italic;
+  color: red;
+}
+
+.txtbox {
+  width: 80%;
+  border: 1px solid var(--third-color);
+  border-radius: 5px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.txt-area {
+  width: 80%;
+  border: 1px solid var(--third-color);
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.form-cont {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.forms {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.txtbox-name {
+  text-align: left;
+  padding-left: 55px;
+  margin-bottom: 5px;
+}
+
+.important {
+  color: red;
+}
+.tx-area {
+  margin-bottom: 80px;
+}
+.specifications-cont {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.btn-add {
+  width: 50px;
+}
+
+.circle-btn {
+  border-radius: 50%;
+}
+
+.added-spec {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  align-items: center;
+}
+.remove-spec{
+  cursor: pointer;
+}
+
+.img-area{
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.img-label{
+  text-align: left;
+  margin-bottom: 5px;
+}
