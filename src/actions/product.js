@@ -18,7 +18,6 @@ export const addProduct = (product) => {
 export const handleNewProduct = (newProduct) => {
   return async (dispatch) => {
     const product = await saveProduct(newProduct);
-    console.log("=======> saved", product);
     dispatch(addProduct(product));
     return product;
   };

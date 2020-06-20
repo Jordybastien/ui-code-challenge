@@ -8,6 +8,7 @@ import ProductDetail from "./views/productDetail";
 import AddProduct from "./views/addProduct";
 import { connect } from "react-redux";
 import { handleInitialData } from "./actions/initialData";
+import LoadingBar from "react-redux-loading";
 
 class App extends Component {
   state = {};
@@ -21,6 +22,9 @@ class App extends Component {
         <div className="grid-container">
           <NavBar />
           <div className="main">
+            <div className="loading-bar">
+              <LoadingBar />
+            </div>
             <Switch>
               <Route path="/" exact component={Homepage} />
               <Route path="/product/:id" exact component={ProductDetail} />

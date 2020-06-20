@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import LoadingBar from "react-redux-loading";
+
 
 const NavBar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -10,7 +10,6 @@ const NavBar = () => {
 
   return (
     <>
-      <LoadingBar />
       <div className="header">
         <div>Logo Here</div>
         <div>

@@ -1,4 +1,3 @@
-import { FETCH_PRODUCTS } from "./actionTypes";
 import { showLoading, hideLoading } from "react-redux-loading";
 import { getProducts } from "../utils/data";
 import { fetchProducts } from "./product";

@@ -148,7 +148,7 @@ class AddProduct extends Component {
             <span className="form-title"> Add Product </span>
           </div>
           <div className="form-cont">
-            <form onSubmit className="forms">
+            <form className="forms">
               <TextBox
                 label="Name"
                 name="name"
@@ -217,7 +217,7 @@ class AddProduct extends Component {
                     className="remove-spec"
                     onClick={() => this.setState({ counter: counter - 1 })}
                   >
-                    <FontAwesomeIcon icon={faTimes} size="2x" color="red" />
+                    <FontAwesomeIcon icon={faTimes} size="1x" color="red" />
                   </div>
                 </div>
               ))}

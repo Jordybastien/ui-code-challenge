@@ -810,11 +810,13 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 25px;
+  cursor: pointer;
 }
 .arrow-down {
   display: flex;
   justify-content: center;
   margin-top: 25px;
+  cursor: pointer;
 }
 
 .main-image {
@@ -967,4 +969,9 @@ a {
 
 .fa-spinner {
   animation: spinner 1s linear infinite;
+}
+
+.loading-bar {
+  margin-top: -50px;
+  margin-bottom: 50px;
 }
